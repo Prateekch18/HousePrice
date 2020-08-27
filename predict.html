@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="i/favicon.png" type="image/x-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700,800,900|Poppins:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+		<!-- Bootstrap 4.3.1 CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<!-- AOS 2.3.1 jQuery plugin CSS (Animations) -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- Startup 3 CSS (Styles for all blocks) -->
+		<link href="css/style.css" rel="stylesheet" />
+		<!-- jQuery 3.3.1 -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<section class="form_7 pt-105 pb-100 color-white">
+
+	<style>
+		.form_7{
+			background-image:url(i/form_7_bg.jpg);
+		}
+		@media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+			.form_7{
+				background-image:url(i/form_7_bg@2x.jpg);
+			}
+		}
+	</style>
+	
+	<div class="container px-xl-0">
+		<div class="row justify-content-center text-center text-md-left">
+			<div class="col-xl-1"></div>
+			<div class="col-xl-4 col-md-5 col-sm-8">
+				<h2 class="mb-15 small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Start Prediction</h2>
+				
+<form action="form-handler.php" method="post" class="mt-30" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+    
+<input type="text"
+id="lotsize" placeholder="Enter lotsize" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left" required />	
+    
+<input type="text" 
+id="bathrms" placeholder="Enter Bathrooms" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left" required />	    
+
+<select id="stories" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Select Number of Floors </option>
+<option value="1">1 Floor</option>    
+<option value="2">2 Floor</option>    
+<option value="3">3 Floor</option>    
+<option value="4">4 Floor</option>        
+</select>	 
+    
+<select id="driveway" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Do you want a driveway ?</option>    
+<option value="0">Yes</option>    
+<option value="0">No</option>    
+</select>
+    
+<select id="recroom" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Do you want a living rooom ?</option>    
+<option value="1">Yes</option>    
+<option value="0">No</option>    
+</select>
+    
+<select id="fullbase" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Do you want full basement ?</option>    
+<option value="1">Yes</option>    
+<option value="0">No</option>    
+</select>
+    
+<select id="gashw" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Do you want Gas Hot Systems ?</option>    
+<option value="1">Yes</option>    
+<option value="0">No</option>    
+</select>    
+
+    
+<select id="airco" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Do you want centralized airconditioning ?</option>    
+<option value="1">Yes</option>    
+<option value="0">No</option>    
+</select>
+    
+<input type="text"
+id="garagepl" placeholder="Enter required garage places" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left" required />	    
+    
+<select id="prefarea" class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+<option selected disabled>Do you want a house in preferred area ?</option>    
+<option value="1">Yes</option>    
+<option value="0">No</option>    
+</select>    
+    
+<button id="predict_btn" class="mt-20 btn action-1">Predict Price</button>
+				</form>
+			</div>
+<div class="col-md-1"></div>
+<div class="col-xl-5 col-md-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+<div id="result" class="mt-125 pt-60 pb-60 px-55 radius6 f-22 text-adaptive right_side">
+Price of the house is USD				</div>
+			</div>
+			<div class="col-xl-1"></div>
+		</div>
+	</div>
+</section>
+<!-- forms alerts -->
+<div class="alert alert-success alert-dismissible alert-form-success" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	Thanks for your message!
+</div>
+<div class="alert alert-warning alert-dismissible alert-form-check-fields" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	Please, fill in required fields.
+</div>
+<div class="alert alert-danger alert-dismissible alert-form-error" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	An error occurred while sending data :(
+</div>
+<!-- popup with video -->
+<div class="overlay"></div>
+
+<div class="video_popup">
+	<a class="close">
+		<img srcset="i/close_white@2x.png 2x" src="i/close_white.png" alt="" />
+	</a>
+	<div class="d-flex align-items-center justify-content-center w-full h-full iframe_container"></div>
+</div>
+
+<!-- Bootstrap 4.3.1 JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Google maps JS API -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+<!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- AOS 2.3.1 jQuery plugin JS (Animations) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+<script src="js/jquery.maskedinput.min.js"></script>
+<!-- Startup 3 JS (Custom js for all blocks) -->
+<script src="js/script.js"></script>
+</body>
+    
+<script>
+$(document).ready(function(){
+
+$("#predict_btn").click(function(){
+    
+var lotsize = $("#lotsize").text();
+var bathrms = $("#bathrms").text();
+var stories = $("#stories option:selected").text();
+var driveway = $("#driveway option:selected").text();
+var recroom = $("#recroom option:selected").text();
+var fullbase = $("#fullbase option:selected").text();
+var gashw = $("#gashw option:selected").text();
+var airco = $("#airco option:selected").text();
+var garagepl = $("#garagepl").text();
+var prefarea = $("#prefarea option:selected").text();    
+    
+$.get("13.233.194.214/predict.php", 
+     {lotsize:lotsize, bathrms:bathrms,
+      stories:stories, driveway:driveway,
+      recroom:recroom, fullbase:fullbase,
+      gashw:gashw, airco:airco, garagepl:garagepl, prefarea:prefarea
+}, function(response){   
+$("#result").html("Price of the house is USD "+response);
+});   
+    
+    
+});     
+});
+</script>

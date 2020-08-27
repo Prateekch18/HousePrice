@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>House Price Prediction System</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="i/favicon.png" type="image/x-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700,800,900|Poppins:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+		<!-- Bootstrap 4.3.1 CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<!-- AOS 2.3.1 jQuery plugin CSS (Animations) -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- Startup 3 CSS (Styles for all blocks) -->
+		<link href="css/style.css" rel="stylesheet" />
+		<!-- jQuery 3.3.1 -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head> 
+	
+	<body>
+		
+			<nav class="navbar navbar-dark navbar-expand-sm bg-secondary fixed-top">
+				<div class="container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="./index.html"><img src="#" height="30" width="41" alt="Logo"></a>
+					<div class="collapse navbar-collapse" id="Navbar">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
+							<li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<header class="jumbotron">
+			<div class=" text-center container px-xl-0">
+				<div class="row justify-content-center">
+					<div class="col-lg-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+						<div class="text-center logo_mobile">
+							<h1>Buy Your Dream House at Genuine Prices</h1>
+						</div>				
+					</div>
+				</div>
+				<div class="row f-18 color-heading medium">
+					<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+						<div class="mx-auto mw-320">
+							Buy a house with appropriate prices in your desired area
+						</div>
+					</div>
+					<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block block_with_border" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+						<div class="mx-auto mw-320">
+							Sell you house at the right price using our house price prediction product
+						</div>
+					</div>
+					<div class="mt-30 col-lg-4 f-18 pt-10 pb-10 text-adaptive block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+						<div class="mx-auto mw-320">
+							Assess the price of houses in your preferred area		
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="row row-content">
+				<div class="col">
+					<div id="mycarousel" class="carousel slide" data-ride="carousel"  data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<img src="./i/house.jpg" class="d-block img-fluid" alt="house">
+							</div>
+							<div class="carousel-item ">
+								<img src="./i/home.jpg" class="d-block img-fluid" alt="house">
+							</div>
+							<div class="carousel-item ">
+							<img src="./i/home1.jpg" class="d-block img-fluid" alt="house">
+							</div>
+							<div class="carousel-item ">
+								<img src="./i/home2.jpg" class="d-block img-fluid" alt="house">
+							</div>
+							<div class="carousel-item ">
+								<img src="./i/home3.jpg" class="d-block img-fluid" alt="house">
+							</div>
+							<div class="carousel-item ">
+								<img src="./i/home4.jpg" class="d-block img-fluid" alt="house">
+							</div>
+							<div class="carousel-item ">
+								<img src="./i/home5.jpg" class="d-block img-fluid" alt="house">
+							</div>
+						</div>
+					</div>	
+					<ol class="carousel-indicators">
+						<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#mycarousel" data-slide-to="1"></li>
+						<li data-target="#mycarousel" data-slide-to="2"></li>
+						<li data-target="#mycarousel" data-slide-to="3"></li>
+						<li data-target="#mycarousel" data-slide-to="4"></li>
+						<li data-target="#mycarousel" data-slide-to="5"></li>
+						<li data-target="#mycarousel" data-slide-to="6"></li>
+					</ol>
+					<a 	class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<button class="btn btn-danger btn-sm" id="carouselButton">
+						<span class="fa fa-pause"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+		<div class="jumbotron">
+			<div class=" text-center container px-xl-0">
+				<div class="row justify-content-center">
+					<div class="col-lg-8" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+						<div class="text-center logo_mobile">
+							<h1>Want to Know the Price <br>of Your Dream House</h1>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-lg-5" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+						<div class="text-center logo_mobile">
+							<a role="button" class="btn btn-secondary button5 "  href="#formpredict">Predict The Price</a>
+							<a role="button" class="btn btn-secondary button5"  href="tel:+918433067195">Call Us  <i class="fa fa-phone fa-rotate-90"></i></a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<section class="form_7 pt-105 pb-100 color-white" id="formpredict">
+		
+			<style>
+				.form_7 {
+					background-image: url(i/form_7_bg.jpg);
+				}
+		
+				@media(-webkit-min-device-pixel-ratio: 1.25),
+				(min-resolution: 120dpi) {
+					.form_7 {
+						background-image: url(i/form_7_bg@2x.jpg);
+					}
+				}
+			</style>
+		
+			<div class="container px-xl-0">
+				<div class="row justify-content-center text-center text-md-left">
+					<div class="col-xl-1"></div>
+					<div class="col-xl-4 col-md-5 col-sm-8">
+						<h2 class="mb-15 small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Start Prediction
+						</h2>
+		
+						<form action="form-handler.php" method="post" class="mt-30" data-aos-duration="600" data-aos="fade-down"
+							data-aos-delay="600">
+		
+							<input type="text" id="lotsize" placeholder="Enter lotsize"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left"
+								required />
+		
+							<input type="text" id="bathrms" placeholder="Enter Bathrooms"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left"
+								required />
+		
+							<select id="stories"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Select Number of Floors </option>
+								<option value="1">1 Floor</option>
+								<option value="2">2 Floor</option>
+								<option value="3">3 Floor</option>
+								<option value="4">4 Floor</option>
+							</select>
+		
+							<select id="driveway"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Do you want a driveway ?</option>
+								<option value="0">Yes</option>
+								<option value="0">No</option>
+							</select>
+		
+							<select id="recroom"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Do you want a living rooom ?</option>
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</select>
+		
+							<select id="fullbase"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Do you want full basement ?</option>
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</select>
+		
+							<select id="gashw"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Do you want Gas Hot Systems ?</option>
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</select>
+		
+		
+							<select id="airco"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Do you want centralized airconditioning ?</option>
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</select>
+		
+							<input type="text" id="garagepl" placeholder="Enter required garage places"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left"
+								required />
+		
+							<select id="prefarea"
+								class="mb-30 input w-full lg border-transparent-white focus-white color-white placeholder-white text-center text-md-left">
+								<option selected disabled>Do you want a house in preferred area ?</option>
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</select>
+		
+							<button id="predict_btn" class="mt-20 btn action-1">Predict Price</button>
+						</form>
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-xl-5 col-md-6" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+						<div id="result" class="mt-125 pt-60 pb-60 px-55 radius6 f-22 text-adaptive right_side">
+							Price of the house is USD </div>
+					</div>
+					<div class="col-xl-1"></div>
+				</div>
+			</div>
+		</section>
+		<!-- forms alerts -->
+		<div class="alert alert-success alert-dismissible alert-form-success" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+					aria-hidden="true">&times;</span></button>
+			Thanks for your message!
+		</div>
+		<div class="alert alert-warning alert-dismissible alert-form-check-fields" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+					aria-hidden="true">&times;</span></button>
+			Please, fill in required fields.
+		</div>
+		<div class="alert alert-danger alert-dismissible alert-form-error" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+					aria-hidden="true">&times;</span></button>
+			An error occurred while sending data :(
+		</div>
+		<!-- popup with video -->
+		<div class="overlay"></div>
+		
+		<div class="video_popup">
+			<a class="close">
+				<img srcset="i/close_white@2x.png 2x" src="i/close_white.png" alt="" />
+			</a>
+			<div class="d-flex align-items-center justify-content-center w-full h-full iframe_container"></div>
+		</div>
+
+
+		<!-- Bootstrap 4.3.1 JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+		<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<!-- Google maps JS API -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+		<!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!-- AOS 2.3.1 jQuery plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<!-- Startup 3 JS (Custom js for all blocks) -->
+		<script src="js/script.js"></script>
+	</body>
+	<script>
+		$(document).ready(function () {
+			$("#predict_btn").click(function () {
+				var lotsize = $("#lotsize").text();
+				var bathrms = $("#bathrms").text();
+				var stories = $("#stories option:selected").text();
+				var driveway = $("#driveway option:selected").text();
+				var recroom = $("#recroom option:selected").text();
+				var fullbase = $("#fullbase option:selected").text();
+				var gashw = $("#gashw option:selected").text();
+				var airco = $("#airco option:selected").text();
+				var garagepl = $("#garagepl").text();
+				var prefarea = $("#prefarea option:selected").text();
+				$.get("13.235.77.56/predict.php",
+					{
+						lotsize: lotsize, bathrms: bathrms,
+						stories: stories, driveway: driveway,
+						recroom: recroom, fullbase: fullbase,
+						gashw: gashw, airco: airco, garagepl: garagepl, prefarea: prefarea
+					}, function (response) {
+						$("#result").html("Price of the house is USD " + response);
+					});
+			});
+		});
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
